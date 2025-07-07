@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ======================== */
+/*        변수 설정         */
+/* ======================== */
+:root {
+  --solidblue: #212E40;
+  --darkblue: #27374D;
+  --mediumblue: #526D82;
+  --grayblue: #9DB2BF;
+  --lightgray: #DDE6ED;
+  --skyblue: #7CCCFB;
+}
+
+/* ======================== */
+/*        기본 설정         */
+/* ======================== */
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--solidblue);
+  color: #222;
+}
+
+header, footer {
+  background: #222;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* ======================== */
+/*        제목 스타일        */
+/* ======================== */
+h2 {
+  font-size: 80px;
+  color: skyblue;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+p {
+  max-width: 600px;
+  font-size: 15px;
+  color: var(--grayblue);
+  line-height: 1.6;
+}
+
+/* ======================== */
+/*        CV 레이아웃       */
+/* ======================== */
+.CV-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.CV, .info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+  max-width: 600px;
+}
+
+.CV h2, .info h2 {
+  margin-top: 0;
+}
+
+.CV-box {
+  border-radius: 32px;
+  border: 1px solid var(--lightgray);
+  padding: 1.5rem 2rem;
+  height: auto; /* 수정된 부분 */
+}
+
+/* ======================== */
+/*        내 정보 스타일     */
+/* ======================== */
+.info {
+  gap: 1.2rem;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+}
+
+.my-info {
+  margin: 0 0 1.5em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-info li {
+  font-size: 1.08rem;
+  margin-bottom: 0.4em;
+}
+
+.my-info-label {
+  color: white; /* 중복 제거 후 수정됨 */
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.my-info-value {
+  color: var(--lightgray);
+  font-weight: 400;
+}
+
+/* ======================== */
+/*        SNS 스타일        */
+/* ======================== */
+.about-sns ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.about-sns li {
+  display: flex;
+  align-items: center;
+}
+
+.about-sns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+.about-sns a:hover {
+  background: var(--mediumblue);
+}
+
+.about-sns img {
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+}
+
+/* ======================== */
+/*    프로필 소개 섹션      */
+/* ======================== */
+.introduction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.introduction .profile-img {
+  margin: 0;
+}
+
+.introduction .profile-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid var(--mediumblue);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #eee;
+}
+
+.introduction .about-text h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.introduction .about-text p {
+  margin: 0 0 0.7em 0;
+  font-size: 1.1rem;
+  color: #526D82;
+  white-space: pre-line;
+}
+
+/* ======================== */
+/*   프로필 영역 수평 배치   */
+/* ======================== */
+.profile-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
