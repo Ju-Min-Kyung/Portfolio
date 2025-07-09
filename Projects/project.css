@@ -1,0 +1,132 @@
+/* ======================== */
+/*        변수 설정         */
+/* ======================== */
+:root {
+  --solidblue: #212E40;
+  --darkblue: #27374D;
+  --mediumblue: #526D82;
+  --grayblue: #9DB2BF;
+  --lightgray: #DDE6ED;
+  --skyblue: #7CCCFB;
+}
+
+/* ======================== */
+/*        기본 설정         */
+/* ======================== */
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--solidblue);
+  color: var(--lightgray);
+}
+
+.project-detail-main {
+    max-width: 800px;
+    margin: 48px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-detail-header {
+    gap: 32px;
+    margin-bottom: 32px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-detail-header img {
+    width: 70%;
+    border-radius: 18px;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 2px 12px #7cccfb33;
+    margin: 0 auto 18px auto;
+    display: block;
+}
+
+.project-detail-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #7cccfb;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.project-detail-meta {
+    color: #b6c6d6;
+    font-size: 1.08rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+.project-detail-section {
+    margin-bottom: 2.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.project-detail-section .img {
+    width: 100%;
+}
+
+.project-detail-section h3 {
+    color: #7cccfb;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.project-detail-section ul {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    color: #e6eaf1;
+    font-size: 1.05rem;
+    display: block;
+    text-align: left;
+}
+
+.project-detail-section li {
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.project-detail-back {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    color: var(--mediumblue);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.2s;
+    text-align: center;
+}
+
+.project-detail-back:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .project-detail-main {
+        padding: 18px 4vw;
+    }
+    .project-detail-header {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .project-detail-header img {
+        width: 90px;
+        height: 90px;
+    }
+    .project-detail-title {
+        font-size: 1.3rem;
+    }
+}
