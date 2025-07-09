@@ -10,88 +10,206 @@
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <ul class="navbar-menu">
       <li><a href="#home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Service">Project</a></li>
-      <li><a href="Blog">Blog</a></li>
-      <li><a href="Contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+
   <main>
-    <section id="about">
-      <div class="introduction">
-        <div class="profile-img">
-          <img src="Resources/profile.jpg" alt="Profile Image">
-        </div>
-        <div class="about-text">
-          <h2 style="text-align: center; font-size: 33px">주민경</h2>
-          <h2 style="text-align: center; color: lightgray; font-size: 33px">Software Engineer</h2>
-          <p>사람들과 함께 성장하며 사용자 경험을 최우선으로 고려한 개발을 지향합니다.</p>
-        </div>
-        <div class="about-sns">
-          <ul>
-            <li>
-              <a href="" target="_blank" title="GitHub">
-                <img src="Resources/SNS/github.png" alt="GitHub">
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank" title="LinkedIn">
-                <img src="Resources/SNS/linkedin.jpg" alt="LinkedIn">
-              </a>
-            </li>
-            <li>
-              <a href="" title="Email">
-                <img src="Resources/SNS/mail.png" alt="Email">
-              </a>
-            </li>
-          </ul>
+    <!-- Intro Section -->
+    <section class="hero intro-section" id="home">
+      <div class="intro-info">
+        <img class="profile-image" src="Resources/profile.jpg" alt="Profile Photo">
+        <h1 class="hero-name">Hello, I’m <span class="highlight">주민경</span>,<br>Software Engineer</h1>
+        <p class="hero-desc">사용자 중심의 소프트웨어를 개발하는 <span class="highlight">주민경</span>입니다.<br>iOS, 웹, 데이터, UI/UX에 강점이 있습니다.
+        </p>
+        <div class="intro-sns">
+          <a href="#" title="GitHub"><img src="Resources/SNS/github.png" alt="GitHub"></a>
+          <a href="#" title="LinkedIn"><img src="Resources/SNS/linkedin.jpg" alt="LinkedIn"></a>
+          <a href="mailto:alsrud7767@gmail.com" title="Email"><img src="Resources/SNS/mail.png" alt="Email"></a>
         </div>
       </div>
     </section>
-    <section id="info">
-      <div class="profile-sections">
-        <div class="CV">
-          <div class="CV-inner">
-            <div class="CV-box" style="height: 400px;">
-              <h2>프로필</h2>
-              <p>저는 소프트웨어 엔지니어로서, 사용자 경험을 최우선으로 고려하며 사람들과 함께 성장하는 것을 중요하게 생각합니다. 다양한 기술 스택을 활용하여 문제를 해결하고, 효율적인 코드를 작성하는 것을 지향합니다.</p>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-layout">
+        <div class="about-img-box">
+          <div class="about-illustration-frame">
+            <img class="about-illustration" src="Resources/Office Workers Sitting At Desks-ai 1.png"
+              alt="About Illustration">
+          </div>
+          <a href="#" class="btn btn-cv">Download Resume</a>
+        </div>
+        <div class="about-content-box">
+          <h2 class="about-title"><span>ABOUT ME</span></h2>
+          <h3 class="about-headline">I Develop System<br>that Work</h3>
+          <p class="about-desc">웹뷰 기반이던 기존 앱(MAU 약 3,300명)을 네이티브 iOS 앱으로 재구현하며, 출시 초기 MAU 1,500을 달성했습니다. 앱 전환 과정에서
+            Firebase 기반의 로그 분석, 버스 도착 정보 기능 개발, A/B 테스트, UI/UX 개선 작업 등을 수행했고, 사용자 경험을 최우선으로 고려한 개발을 지향했습니다.<br><br>이러한
+            경험을 바탕으로 새로운 환경에서도 빠르게 적응하고, 구체적인 성과로 조직에 기여할 것입니다.</p>
+          <div class="about-table">
+            <div class="about-row"><span class="about-label">Name</span><span class="about-value">주민경</span></div>
+            <div class="about-row"><span class="about-label">Email</span><span
+                class="about-value">alsrud7767@gmail.com</span></div>
+            <div class="about-row"><span class="about-label">Location</span><span class="about-value">South Korea</span>
             </div>
-            <div class="CV-box" style="height: 40px;">
-              <!-- 두 번째 라운드 div에 원하는 내용을 입력</div>하세요 -->
-              <h2>추가 정보</h2>
-              <p>여기에 두 번째 박스의 내용을 작성하세요.</p>
+            <div class="about-row"><span class="about-label">Languages</span><span class="about-value">Korean,
+                English</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section (Education + Experience + Skills) -->
+    <!--
+    <section class="resume-section" id="resume">
+      <h2>Resume</h2>
+      <div class="resume-container">
+        <div class="resume-education">
+          <h3>Education</h3>
+          <div class="resume-item">
+            <span class="resume-year">2012-2016</span>
+            <div>
+              <strong>컴뷰터공학부</strong><br>
+              한국기술교육대학교<br>
             </div>
           </div>
         </div>
-        <div class="info">
-          <h2>About Me</h2>
-          <p>안녕하세요! 저는 소프트웨어 엔지니어 주민경입니다. </p>
-          <h3>내 정보</h3>
-          <ul class="my-info">
-            <li><span class="my-info-label">Name</span><span class="my-info-value">주민경</span></li>
-            <li><span class="my-info-label">Email</span><span class="my-info-value"><a href="mailto:alsrud7767@gmail.com">alsrud7767@gmail.com</a></span></li>
-            <li><span class="my-info-label">Phone</span><span class="my-info-value">010-6693-3686</span></li>
-            <li><span class="my-info-label">Birth</span><span class="my-info-value">2002.01.18</span></li>
+        <div class="resume-experience">
+          <h3>Experience</h3>
+          <div class="resume-item">
+            <span class="resume-year">2018-2024</span>
+            <div>
+              <strong>Backend Web Developer</strong> - Tech Firing Ltd<br>
+              Worked on back-end and front-end features. Created RESTful APIs, authentication, and dashboards. Built
+              with MySQL/Python/Django, React, and deployed solutions with Python.
+            </div>
+          </div>
+        </div>
+        <div class="resume-skills">
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 & CSS3</li>
+            <li>React</li>
+            <li>Django</li>
+            <li>Python</li>
+            <li>SQL</li>
           </ul>
         </div>
       </div>
     </section>
-    <section id="projects">
-      
+  -->
+
+    <!-- Portfolio Section (Projects + Articles) -->
+    <section class="prject-section" id="project">
+      <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2.5rem; width: 100%;">
+        <div style="display: inline-block; border-bottom: 1px solid var(--lightgray); opacity: 0.7; height: 90px;">
+          <h2
+            style="font-size: 40px; color: var(--lightgray); letter-spacing: 0.18em; font-weight: 700; text-align: center; margin-bottom: 0.1em; text-transform: uppercase; line-height: 1; padding: 0 24px;">
+            PORTFOLIO</h2>
+        </div>
+      </div>
+      <div class="project-content" id="projects">
+        <div class="project-filters">
+          <button class="filter-btn active">All Projects</button>
+          <button class="filter-btn">Frontend</button>
+          <button class="filter-btn">iOS</button>
+          <button class="filter-btn">AR</button>
+        </div>
+        <div class="project-cards">
+          <div class="project-card">
+            <img src="Resources/project/koin/koin.png" alt="Project 1">
+            <div class="project-info">
+              <h3>한기대 정보제공 플랫폼, 코인</h3>
+              <p>한국기술교육대학교 교내 IT 동아리에서 운영하는 학교 커뮤니티 서비스로,
+                2019년 서비스를 시작하여 교내의 75% 학생 및 교직원 사용자들과 함께 서비스를 운영하고 있습니다.
+              </p>
+              <span class="project-tag">IOS</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="Resources/project/koin/koin.png" alt="Project 1">
+            <div class="project-info">
+              <h3>지능형 XR 기반 응급구조사 자격 2급 플랫폼</h3>
+              <p>한국기술교육대학교 캡스톤 디자인 프로젝트, AR을 활용하여 공간에 제약이 없는 응급구조사 2급 교육 프레임워크를 제작하였습니다.
+              </p>
+              <span class="project-tag">IOS</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="Resources/project/koin/koin.png" alt="Project 1">
+            <div class="project-info">
+              <h3>지능형 XR 기반 응급구조사 자격 2급 플랫폼</h3>
+              <p>한국기술교육대학교 캡스톤 디자인 프로젝트, AR을 활용하여 공간에 제약이 없는 응급구조사 2급 교육 프레임워크를 제작하였습니다.
+              </p>
+              <span class="project-tag">IOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="skills">
-      <!-- 기술 스택 -->
-    </section>
-    <section id="contact">
-      <!-- 연락처 정보 -->
+
+    <!-- Services Section (moved inside Portfolio as a card) -->
+    <!-- Optionally, you can add a Services card inside Portfolio or Resume if needed -->
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2.5rem; width: 100%;">
+        <div style="display: inline-block; border-bottom: 1px solid var(--lightgray); opacity: 0.7; height: 90px;">
+          <h2
+            style="font-size: 40px; color: var(--lightgray); letter-spacing: 0.18em; font-weight: 700; text-align: center; margin-bottom: 0.1em; text-transform: uppercase; line-height: 1; padding: 0 24px;">
+            Contact Us</h2>
+        </div>
+      </div>
+      <div class="contact-container contact-flex">
+        <div class="contact-info-block">
+          <div class="contact-info-row">
+            <span class="contact-info-icon">&#9993;</span>
+            <span class="contact-info-label">Email</span> :
+            <span class="contact-info-value">alsrud7767@gmail.com</span>
+          </div>
+          <div class="contact-info-row">
+            <span class="contact-info-icon">&#128205;</span>
+            <span class="contact-info-label">Address</span> :
+            <span class="contact-info-value">South Korea</span>
+          </div>
+        </div>
+        <form class="contact-form contact-form-custom">
+          <label for="email" class="contact-label">*Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email here.." required class="contact-input">
+          <label for="message" class="contact-label">*Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your Text here.." required
+            class="contact-textarea"></textarea>
+          <div class="contact-btn-row">
+            <button type="submit" class="btn btn-primary contact-btn-submit">Submit</button>
+            <button type="reset" class="btn btn-secondary contact-btn-reset">Reset</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
-  <footer>
-    &copy; 2025 포트폴리오. All rights reserved.
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Minkyung Joo</div>
+      <div class="footer-sns">
+        <a href="#"><img src="Resources/SNS/github.png" alt="GitHub"></a>
+        <a href="#"><img src="Resources/SNS/linkedin.jpg" alt="LinkedIn"></a>
+        <a href="mailto:alsrud7767@gmail.com"><img src="Resources/SNS/mail.png" alt="Email"></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 주민경. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
-<script>
