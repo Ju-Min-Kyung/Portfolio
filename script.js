@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
     bounceSequence();
     setInterval(bounceSequence, snsIcons.length * 180 + 800);
   }
+
+  const blogFilters = document.querySelector('.blog-filters');
    
 });
 
